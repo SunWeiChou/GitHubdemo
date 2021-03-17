@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <style>
+        .wrap{
+            background-color: #eee;
+            width: 800px;
+            /* height: 1000px; */
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin:0 auto;
+        }
+        .col{
+            width: 400px;
+            height: 200px;
+            font-size: 40px;
+        }
+
+        .col1{
+            background-color: rgb(240, 101, 101);
+        }
+        .col2{
+            background-color: rgb(251, 158, 81);
+        }
+        .col3{
+            background-color: rgb(240, 231, 101);
+        }
+        .col4{
+            background-color: rgb(140, 240, 101);
+        }
+        .col5{
+            background-color: rgb(87, 98, 250);
+        }
+        
+        .line{
+            display: flex;
+        }
+        .line1,.line3,.line5{
+            flex-direction: row-reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="line line1">
+            <div class="col col1">1</div>
+            <div class="col"><img src="https://picsum.photos/400/200/?random=1"></div>
+        </div>
+        <div class="line line2">
+            <div class="col col2">2</div>
+            <div class="col"><img src="https://picsum.photos/400/200/?random=2"></div>
+        </div>
+        <div class="line line3">
+            <div class="col col3">3</div>
+            <div class="col"><img src="https://picsum.photos/400/200/?random=3"></div>
+        </div>
+        <div class="line line4">
+            <div class="col col4">4</div>
+            <div class="col"><img src="https://picsum.photos/400/200/?random=4"></div>
+        </div>
+        <div class="line line5">
+            <div class="col col5">5</div>
+            <div class="col"><img src="https://picsum.photos/400/200/?random=5"></div>
+        </div>        
+    </div>
+</body>
+</html>
